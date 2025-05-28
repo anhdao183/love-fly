@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  position: relative;
+  height: 100vh;
+}
+
+.word {
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #fc0;
+  animation: fly 10s linear infinite;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
